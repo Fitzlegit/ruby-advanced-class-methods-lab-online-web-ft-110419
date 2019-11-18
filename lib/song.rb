@@ -51,7 +51,7 @@ class Song
     song
   end
   
-  def create_from_filename(filename)
+  def self.create_from_filename(filename)
     info = filename.split(" - ")
     artist_name = info[0]
     song_name = info[1].gsub(".mp3","")
